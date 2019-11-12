@@ -1,0 +1,568 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Car Sale\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-06-09 17:14+0000\n"
+"PO-Revision-Date: 2018-06-09 17:18+0000\n"
+"Last-Translator: auto_cars <ksrvnn03@gmail.com>\n"
+"Language-Team: Arabic\n"
+"Language: ar\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100 >= 3 "
+"&& n%100<=10 ? 3 : n%100 >= 11 && n%100<=99 ? 4 : 5;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/"
+
+#: functions.php:70
+msgid "Sidebar"
+msgstr ""
+
+#: functions.php:72 functions.php:83 functions.php:94 functions.php:105
+#: functions.php:116
+msgid "Add widgets here."
+msgstr ""
+
+#: functions.php:81
+msgid "Footer Widget 1"
+msgstr ""
+
+#: functions.php:92
+msgid "Footer Widget 2"
+msgstr ""
+
+#: functions.php:103
+msgid "Footer Widget 3"
+msgstr ""
+
+#: functions.php:114
+msgid "Footer Widget 4"
+msgstr ""
+
+#. Name of the template
+msgid "Test Page"
+msgstr ""
+
+#. Name of the template
+msgid "Sell Your Car"
+msgstr ""
+
+#: tpl_sell_your_car.php:66 inc/custom_functions.php:37
+msgid "Brand"
+msgstr ""
+
+#: tpl_sell_your_car.php:68
+msgid "Model"
+msgstr ""
+
+#: tpl_sell_your_car.php:70
+msgid "Year"
+msgstr ""
+
+#: tpl_sell_your_car.php:72
+msgid "Enter Your Year"
+msgstr ""
+
+#: tpl_sell_your_car.php:123
+msgid "Fuel"
+msgstr ""
+
+#: tpl_sell_your_car.php:124
+msgid "Petrol"
+msgstr ""
+
+#: tpl_sell_your_car.php:125
+msgid "Diesel"
+msgstr ""
+
+#: tpl_sell_your_car.php:126
+msgid "Electro"
+msgstr ""
+
+#: tpl_sell_your_car.php:127
+msgid "Hybrid"
+msgstr ""
+
+#: tpl_sell_your_car.php:128
+msgid "Doors"
+msgstr ""
+
+#: tpl_sell_your_car.php:131
+msgid "Transmission"
+msgstr ""
+
+#: tpl_sell_your_car.php:132
+msgid "Manual"
+msgstr ""
+
+#: tpl_sell_your_car.php:133
+msgid "Automatic"
+msgstr ""
+
+#: tpl_sell_your_car.php:134
+msgid "Select Your Car Body Type"
+msgstr ""
+
+#: tpl_sell_your_car.php:135
+msgid "Convertible"
+msgstr ""
+
+#: tpl_sell_your_car.php:136
+msgid "Coupe"
+msgstr ""
+
+#: tpl_sell_your_car.php:137
+msgid "Crossover"
+msgstr ""
+
+#: tpl_sell_your_car.php:138
+msgid "Fastback"
+msgstr ""
+
+#: tpl_sell_your_car.php:139
+msgid "Hatchback"
+msgstr ""
+
+#: tpl_sell_your_car.php:140
+msgid "Pick-up"
+msgstr ""
+
+#: tpl_sell_your_car.php:141
+msgid "Sedan"
+msgstr ""
+
+#: tpl_sell_your_car.php:142
+msgid "Sportsback"
+msgstr ""
+
+#: tpl_sell_your_car.php:143
+msgid "SUV"
+msgstr ""
+
+#: tpl_sell_your_car.php:144
+msgid "Wagon"
+msgstr ""
+
+#: tpl_sell_your_car.php:145
+msgid "Engine"
+msgstr ""
+
+#: tpl_sell_your_car.php:146
+msgid "Ex:2000"
+msgstr ""
+
+#: tpl_sell_your_car.php:147
+msgid "Power"
+msgstr ""
+
+#: tpl_sell_your_car.php:148 tpl_sell_your_car.php:153
+msgid "Ex:143"
+msgstr ""
+
+#: tpl_sell_your_car.php:149
+msgid "Condition"
+msgstr ""
+
+#: tpl_sell_your_car.php:150
+msgid "New car"
+msgstr ""
+
+#: tpl_sell_your_car.php:151
+msgid "Used car"
+msgstr ""
+
+#: tpl_sell_your_car.php:152
+msgid "Mileage"
+msgstr ""
+
+#: tpl_sell_your_car.php:154
+msgid "Specs(?)"
+msgstr ""
+
+#: tpl_sell_your_car.php:155
+msgid "GCC"
+msgstr ""
+
+#: tpl_sell_your_car.php:156
+msgid "American"
+msgstr ""
+
+#: tpl_sell_your_car.php:157
+msgid "Japanese"
+msgstr ""
+
+#: tpl_sell_your_car.php:158
+msgid "European"
+msgstr ""
+
+#: tpl_sell_your_car.php:159
+msgid "Other"
+msgstr ""
+
+#: tpl_sell_your_car.php:160
+msgid "Choose Your Car Color"
+msgstr ""
+
+#: tpl_sell_your_car.php:161
+msgid "Silver"
+msgstr ""
+
+#: tpl_sell_your_car.php:162
+msgid "Black"
+msgstr ""
+
+#: tpl_sell_your_car.php:163
+msgid "Beige"
+msgstr ""
+
+#: tpl_sell_your_car.php:164
+msgid "Blue"
+msgstr ""
+
+#: tpl_sell_your_car.php:165
+msgid "Brown"
+msgstr ""
+
+#: tpl_sell_your_car.php:166
+msgid "Gold"
+msgstr ""
+
+#: tpl_sell_your_car.php:167
+msgid "Green"
+msgstr ""
+
+#: tpl_sell_your_car.php:168
+msgid "Orange"
+msgstr ""
+
+#: tpl_sell_your_car.php:169
+msgid "Purple"
+msgstr ""
+
+#: tpl_sell_your_car.php:170
+msgid "Red"
+msgstr ""
+
+#: tpl_sell_your_car.php:171
+msgid "White"
+msgstr ""
+
+#: tpl_sell_your_car.php:172
+msgid "Yellow"
+msgstr ""
+
+#: tpl_sell_your_car.php:173
+msgid "Price"
+msgstr ""
+
+#: tpl_sell_your_car.php:176
+msgid "Enter Your Location"
+msgstr ""
+
+#: tpl_sell_your_car.php:182
+msgid "Exterior"
+msgstr ""
+
+#: tpl_sell_your_car.php:183
+msgid "Alloy Wheels"
+msgstr ""
+
+#: tpl_sell_your_car.php:184
+msgid "Tow Coupling"
+msgstr ""
+
+#: tpl_sell_your_car.php:185
+msgid "Roof rack"
+msgstr ""
+
+#: tpl_sell_your_car.php:186
+msgid "Xenon lights"
+msgstr ""
+
+#: tpl_sell_your_car.php:187
+msgid "Winch"
+msgstr ""
+
+#: tpl_sell_your_car.php:188
+msgid "Spot lights"
+msgstr ""
+
+#: tpl_sell_your_car.php:189
+msgid "Led lights"
+msgstr ""
+
+#: tpl_sell_your_car.php:190
+msgid "Interior"
+msgstr ""
+
+#: tpl_sell_your_car.php:191
+msgid "2 Airbags"
+msgstr ""
+
+#: tpl_sell_your_car.php:192
+msgid "4 Airbags"
+msgstr ""
+
+#: tpl_sell_your_car.php:193
+msgid "6 Airbags"
+msgstr ""
+
+#: tpl_sell_your_car.php:194
+msgid "8 Airbags"
+msgstr ""
+
+#: tpl_sell_your_car.php:195
+msgid "Air Condition"
+msgstr ""
+
+#: tpl_sell_your_car.php:196
+msgid "Heated Seats"
+msgstr ""
+
+#: tpl_sell_your_car.php:197
+msgid "Navigation system"
+msgstr ""
+
+#: tpl_sell_your_car.php:198
+msgid "Cup holders"
+msgstr ""
+
+#: tpl_sell_your_car.php:199
+msgid "CD audio system"
+msgstr ""
+
+#: tpl_sell_your_car.php:200
+msgid "USB plug"
+msgstr ""
+
+#: tpl_sell_your_car.php:201
+msgid "AUX plug"
+msgstr ""
+
+#: tpl_sell_your_car.php:202
+msgid "Bluetooth"
+msgstr ""
+
+#: tpl_sell_your_car.php:203
+msgid "Equipment"
+msgstr ""
+
+#: tpl_sell_your_car.php:204
+msgid "Alarm system"
+msgstr ""
+
+#: tpl_sell_your_car.php:205
+msgid "Traction control"
+msgstr ""
+
+#: tpl_sell_your_car.php:206
+msgid "Power steering"
+msgstr ""
+
+#: tpl_sell_your_car.php:207
+msgid "Anti-lock bracking"
+msgstr ""
+
+#: tpl_sell_your_car.php:208
+msgid "Keyless entry"
+msgstr ""
+
+#: tpl_sell_your_car.php:209
+msgid "Cruise control"
+msgstr ""
+
+#: tpl_sell_your_car.php:210
+msgid "Engine immobilizer"
+msgstr ""
+
+#: tpl_sell_your_car.php:211
+msgid "Power door locks"
+msgstr ""
+
+#: tpl_sell_your_car.php:212
+msgid "Sunroof"
+msgstr ""
+
+#: tpl_sell_your_car.php:213
+msgid "Electrin mirrors"
+msgstr ""
+
+#: tpl_sell_your_car.php:214
+msgid "Description"
+msgstr ""
+
+#: tpl_sell_your_car.php:216
+msgid "Car Images"
+msgstr ""
+
+#: tpl_sell_your_car.php:225
+msgid "Name"
+msgstr ""
+
+#: tpl_sell_your_car.php:227
+msgid "Email"
+msgstr "البريد الإلكتروني"
+
+#: tpl_sell_your_car.php:229
+msgid "Mobile"
+msgstr ""
+
+#: tpl_sell_your_car.php:235
+msgid "Submit"
+msgstr ""
+
+#. Name of the template
+#: template-parts/login.php:13
+msgid "Login"
+msgstr "تسجيل الدخول"
+
+#: template-parts/login.php:17 template-parts/login.php:81
+#: template-parts/login.php:100
+msgid "Email Address"
+msgstr "عنوان البريد الإلكتروني"
+
+#: template-parts/login.php:20
+msgid "Password"
+msgstr "كلمه السر"
+
+#: template-parts/login.php:26
+msgid "Remember me"
+msgstr "تذكرنى"
+
+#: template-parts/login.php:29 template-parts/login.php:77
+msgid "Forgot Password"
+msgstr "هل نسيت كلمة المرور"
+
+#: template-parts/login.php:33
+msgid "login"
+msgstr "تسجيل الدخول"
+
+#: template-parts/login.php:69
+msgid "New User"
+msgstr ""
+
+#: template-parts/login.php:69
+msgid "Sign up now"
+msgstr "تسجيل"
+
+#: template-parts/login.php:84
+msgid "Reset"
+msgstr "إعادة تعيين"
+
+#: template-parts/login.php:93 template-parts/login.php:109
+msgid "Signup"
+msgstr "تسجيل"
+
+#: template-parts/login.php:97
+msgid "Enter your name"
+msgstr "أدخل أسمك"
+
+#: template-parts/login.php:106
+msgid "Confirm Password"
+msgstr "تأكيد كلمة المرور"
+
+#: inc/custom_functions.php:7 inc/custom_functions.php:18
+msgid "Cars"
+msgstr ""
+
+#: inc/custom_functions.php:8
+msgid "Parent Cars"
+msgstr ""
+
+#: inc/custom_functions.php:9
+msgid "All Cars"
+msgstr ""
+
+#: inc/custom_functions.php:10
+msgid "View Cars"
+msgstr ""
+
+#: inc/custom_functions.php:11
+msgid "Add New Car"
+msgstr ""
+
+#: inc/custom_functions.php:12
+msgid "Add New"
+msgstr ""
+
+#: inc/custom_functions.php:13
+msgid "Edit Cars"
+msgstr ""
+
+#: inc/custom_functions.php:14
+msgid "Update Car"
+msgstr ""
+
+#: inc/custom_functions.php:15
+msgid "Search Car"
+msgstr ""
+
+#: inc/custom_functions.php:16
+msgid "Not Found"
+msgstr ""
+
+#: inc/custom_functions.php:17
+msgid "Not found in Trash"
+msgstr ""
+
+#: inc/custom_functions.php:19
+msgid "Sell cars"
+msgstr ""
+
+#: inc/custom_functions.php:27
+msgctxt "taxonomy general name"
+msgid "Brands"
+msgstr ""
+
+#: inc/custom_functions.php:28
+msgctxt "taxonomy singular name"
+msgid "Brand"
+msgstr ""
+
+#: inc/custom_functions.php:29
+msgid "Search Brand"
+msgstr ""
+
+#: inc/custom_functions.php:30
+msgid "All Brands"
+msgstr ""
+
+#: inc/custom_functions.php:31
+msgid "Parent Brand"
+msgstr ""
+
+#: inc/custom_functions.php:32
+msgid "Parent Brand:"
+msgstr ""
+
+#: inc/custom_functions.php:33
+msgid "Edit Brand"
+msgstr ""
+
+#: inc/custom_functions.php:34
+msgid "Update Brand"
+msgstr ""
+
+#: inc/custom_functions.php:35
+msgid "Add New Brand"
+msgstr ""
+
+#: inc/custom_functions.php:36
+msgid "New Brand"
+msgstr ""
+
+#. Name of the theme
+msgid "Car Sale"
+msgstr ""
+
+#. Description of the theme
+msgid "Wordpress Carsale Theme"
+msgstr ""
+
+#. Author of the theme
+msgid "Saravanan"
+msgstr ""
+
+#. Author URI of the theme
+msgid "https://wordpress.org/"
+msgstr ""

@@ -1,0 +1,14 @@
+wp-admin
+u:auto_cars
+p:Soft@1234
+
+
+backup and installations.
+- upload installer.php, 20180613_autocar_150a152da0638c9a6438180822142906_archive.zip file in server
+
+
+Reference website
+[5/17, 6:47 PM] Mdz- Suresh: https://www.dubicars.com/dubai/used?gclid=EAIaIQobChMIqMbW34fg2gIVDPlRCh0ddAFXEAAYASAAEgIPwPD_BwE
+[5/17, 6:47 PM] Mdz- Suresh: https://dubai.dubizzle.com/motors/used-cars/
+[5/17, 6:47 PM] Mdz- Suresh: http://carmudi.ae/en/cars
+[5/17, 6:47 PM] Mdz- Suresh: https://uae.yallamotor.com/used-cars

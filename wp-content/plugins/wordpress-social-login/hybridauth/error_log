@@ -1,0 +1,1 @@
+[24-Jul-2018 18:32:41 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/o5hi7zw4a2lb/public_html/car/wp-content/plugins/wordpress-social-login/hybridauth/endpoints/WSL_Endpoint.php:156) in /home/o5hi7zw4a2lb/public_html/car/wp-content/plugins/qtranslate-x/qtranslate_core.php on line 388

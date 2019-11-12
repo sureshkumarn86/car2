@@ -1,0 +1,86 @@
+if (!function_exists('wp_handle_upload')) {
+           require_once(ABSPATH . 'wp-admin/includes/file.php');
+       }
+	 /*  $files=json_decode(stripslashes($_POST['file'])); */
+	 // print_r($files);
+	  $upload_overrides = array('test_form' => false);
+	  $att_id="";
+	  foreach ($files as $u_file) {
+		print_r($u_file);
+		foreach($u_file as $key => $value)
+		{
+			$uploadedfile = array(
+				'name'     => $u_file['name'][$key],
+				'type'     => $u_file['type'][$key],
+				'size'     => $u_file['size'][$key]
+			);
+		}
+		 $movefile = wp_handle_upload( $uploadedfile, $upload_overrides );
+		 //print_r($movefile);
+		  //if ( $movefile && !isset( $movefile['error'] ) ) {
+			//echo $filename=$movefile['url'];
+			
+			$parent_post_id = $p_id;
+
+
+		$filetype = wp_check_filetype( basename( $filename ), null );
+
+		// Get the path to the upload directory.
+		$wp_upload_dir = wp_upload_dir();
+
+		// Prepare an array of post data for the attachment.
+		$attachment = array(
+			'guid'           => $wp_upload_dir['url'] . '/' . basename( $filename ), 
+			'post_mime_type' => $filetype['type'],
+			'post_title'     => preg_replace( '/\.[^.]+$/', '', basename( $filename ) ),
+			'post_content'   => '',
+			'post_status'    => 'inherit'
+		);
+
+		// Insert the attachment.
+		$attach_id = wp_insert_attachment( $attachment, $filename, $parent_post_id );
+
+		// Make sure that this file is included, as wp_generate_attachment_metadata() depends on it.
+		require_once( ABSPATH . 'wp-admin/includes/image.php' );
+
+		// Generate the metadata for the attachment, and update the database record.
+		$attach_data = wp_generate_attachment_metadata( $attach_id, $filename );
+		wp_update_attachment_metadata( $attach_id, $attach_data );
+		$att_id.=$attach_id;
+		  //}
+		  
+		}
+		//echo $att_id;
+	    /*$upload_overrides = array('test_form' => false);
+      $movefile = wp_handle_upload($uploadedfile, $upload_overrides);
+
+		echo $movefile['url'];*/
+      /*if ($movefile && !isset($movefile['error'])) {
+         echo "File Upload Successfully";
+    } else {*/
+	
+		/*$p_id = wp_insert_post(
+		array(
+		'post_author'  => $user_id,
+		'post_title'   => $brand." ".$model,
+		'post_status'  => 'publish',
+		'post_type'    => $post_type,
+		'post_content' => $post_content
+		));
+		
+		add_post_meta($p_id,'car_condition',$condition_val);
+		add_post_meta($p_id,'car_year',$post_year);
+		add_post_meta($p_id,'car_fuel',$post_fuel_val);
+		add_post_meta($p_id,'car_doors',$post_doors_val);
+		add_post_meta($p_id,'car_transmission',$post_trans_val);
+		add_post_meta($p_id,'car_body_type',$post_car_type);
+		add_post_meta($p_id,'car_enginecc',$post_engine_val);
+		add_post_meta($p_id,'car_power',$power_val);
+		add_post_meta($p_id,'car_mileage',$mileage_val);
+		add_post_meta($p_id,'car_specs',$specs_val);
+		add_post_meta($p_id,'car_color',$car_color_val);
+		add_post_meta($p_id,'car_price',$price_val);
+		add_post_meta($p_id,'car_location',$location_val);
+		add_post_meta($p_id,'car_exterior',$exterior_val);
+		add_post_meta($p_id,'car_interior',$interior_val);
+		add_post_meta($p_id,'car_equipment',$equipment_val);*/

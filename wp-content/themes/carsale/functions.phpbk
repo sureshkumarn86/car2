@@ -1,0 +1,241 @@
+<?php
+/*
+	*Car Sale Theme functions*
+*/
+
+
+function mytheme_localisation(){
+
+    function mytheme_localised( $locale ) {
+        if ( isset( $_GET['l'] ) ) {
+            return sanitize_key( $_GET['l'] );
+        }
+        return $locale;
+    }
+    add_filter( 'locale', 'mytheme_localised' );
+    load_theme_textdomain( 'carsale', get_template_directory() . '/languages' );
+	
+	function whead(){
+	?>
+	<script>
+		var adminajax="<?php echo admin_url('admin-ajax.php'); ?>";
+	</script>
+	<?php
+	}
+	add_action('wp_head','whead');
+	
+}
+add_action( 'after_setup_theme', 'mytheme_localisation' );
+
+
+
+function sarav_starter_setup() {
+
+
+add_image_size( 'car-medium-thumb', 300, 220 );
+add_image_size( 'car-small-thumb', 120, 70 ); 
+
+/*Hide wp admin bar*/
+show_admin_bar(false);
+
+/* Theme options */
+require_once('inc/theme.php');
+
+/*Custom functions*/
+require_once('inc/custom_functions.php');
+
+/*Custom functions*/
+require_once('inc/ajax-functions.php');
+	
+/* Add default posts and comments RSS feed links to head.*/
+add_theme_support( 'automatic-feed-links' );
+
+/* Let WordPress manage the document title.*/
+add_theme_support( 'title-tag' );
+
+
+/*Enable support for Post Thumbnails on posts and pages.*/
+add_theme_support( 'post-thumbnails' );
+
+
+}
+add_action( 'after_setup_theme', 'sarav_starter_setup' );
+
+
+
+function sarav_theme_register_menus() {
+  register_nav_menus(
+    array(  
+		'top_nav' => __( 'Topbar Navigation' ),
+    	'primary_nav' => __( 'Header Navigation' ), 		
+    	'footer_nav' => __( 'Footer Navigation' )
+    )
+  ); 
+} 
+add_action( 'init', 'sarav_theme_register_menus' );
+
+
+function sarav_theme_site_widgets() {
+	register_sidebar( 
+		array(		
+		'name'          => esc_html__( 'Sidebar', 'carsale' ),		
+		'id'            => 'sidebar-default',	
+		'description'   => esc_html__( 'Add widgets here.', 'carsale' ),	
+		'before_widget' => '<div id="%1$s" class="%2$s footer_wrapper">',		
+		'after_widget'  => '</div>',	 	
+		'before_title'  => '<h4 class="widget-title">',		
+		'after_title'   => '</h4>',	
+		)	 		
+	);
+	register_sidebar( 
+		array(		
+		'name'          => esc_html__( 'Footer Widget 1', 'carsale' ),	
+		'id'            => 'footer1',	
+		'description'   => esc_html__( 'Add widgets here.', 'carsale' ),	
+		'before_widget' => '<div id="%1$s" class="%2$s footer_wrapper">',		
+		'after_widget'  => '</div>',	 	
+		'before_title'  => '<h4>',		
+		'after_title'   => '</h4>',	
+		)	 		
+	);
+	register_sidebar( 
+	array(		
+		'name'          => esc_html__( 'Footer Widget 2', 'carsale' ),
+		'id'            => 'footer2',	
+		'description'   => esc_html__( 'Add widgets here.', 'carsale' ),		
+		'before_widget' => '<div id="%1$s" class="%2$s footer_wrapper">',		
+		'after_widget'  => '</div>',	 	
+		'before_title'  => '<h4>',		
+		'after_title'   => '</h4>',	
+		)
+	);
+	register_sidebar( 
+	array(		
+		'name'          => esc_html__( 'Footer Widget 3', 'carsale' ),
+		'id'            => 'footer3',	
+		'description'   => esc_html__( 'Add widgets here.', 'carsale' ),
+		'before_widget' => '<div id="%1$s" class="%2$s footer_wrapper">',		
+		'after_widget'  => '</div>',	 	
+		'before_title'  => '<h4>',		
+		'after_title'   => '</h4>',	
+		)
+	);
+	register_sidebar( 
+	array(		
+		'name'          => esc_html__( 'Footer Widget 4', 'carsale' ),
+		'id'            => 'footer4',	
+		'description'   => esc_html__( 'Add widgets here.', 'carsale' ),	
+		'before_widget' => '<div id="%1$s" class="%2$s footer_wrapper">',		
+		'after_widget'  => '</div>',	 	
+		'before_title'  => '<h4>',		
+		'after_title'   => '</h4>',	
+		)
+	);
+}
+add_action( 'widgets_init', 'sarav_theme_site_widgets' );
+
+
+function sarav_theme_theme_styles() {
+
+wp_enqueue_style( 'style', get_stylesheet_uri() );
+wp_enqueue_style( 'bootstrap_style', get_template_directory_uri().'/assets/css/bootstrap.min.css' );
+wp_enqueue_style( 'jquery_theme', 'https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css' );
+
+wp_enqueue_script('jquery');
+wp_enqueue_script( 'ui-script', get_template_directory_uri() . '/assets/js/jquery-ui.min.js', array(), '1.0.0', true );
+wp_enqueue_script( 'bootstrap_script', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array(), '1.0.0', true );
+wp_enqueue_script( 'modernizr_script', get_template_directory_uri() . '/assets/js/modernizr.custom.js', array(), '1.0.0', true );	
+
+wp_enqueue_script( 'waypoints_script', get_template_directory_uri() . '/assets/js/waypoints.min.js', array(), '1.0.0', true );
+wp_enqueue_script( 'pie_chart', get_template_directory_uri() . '/assets/js/jquery.easypiechart.min.js', array(), '1.0.0', true );	
+
+wp_enqueue_script( 'classie_script', get_template_directory_uri() . '/assets/js/classie.js', array(), '1.0.0', true );
+wp_enqueue_script( 'owl_carsoual', get_template_directory_uri() . '/assets/plugins/owl-carousel/owl.carousel.min.js', array(), '1.0.0', true );
+
+wp_enqueue_script( 'bx_slider', get_template_directory_uri() . '/assets/plugins/bxslider/jquery.bxslider.js', array(), '1.0.0', true );
+wp_enqueue_script( 'ui_slider', get_template_directory_uri() . '/assets/plugins/slider/jquery.ui-slider.js', array(), '1.0.0', true );
+wp_enqueue_script( 'smooth_scroll', get_template_directory_uri() . '/assets/js/jquery.smooth-scroll.js', array(), '1.0.0', true );
+
+wp_enqueue_script( 'placeholder_script', get_template_directory_uri() . '/assets/js/jquery.placeholder.min.js', array(), '1.0.0', true );
+
+wp_enqueue_script( 'theme_script', get_template_directory_uri() . '/assets/js/theme.js', array(), '1.0.0', true );
+
+wp_enqueue_script( 'jquery_ui', 'https://code.jquery.com/ui/1.12.1/jquery-ui.js', array(), '1.0.0', true );
+wp_enqueue_script( 'custom_script', get_template_directory_uri() . '/assets/js/script.js', array(), '1.0.0', true );
+
+
+
+}
+add_action( 'wp_enqueue_scripts', 'sarav_theme_theme_styles' );
+
+
+
+function social_media(){
+$sm='';
+print_r($settings);
+
+}
+add_shortcode('social_media','social_media');
+
+function test_func()
+{
+	echo "teset";
+}
+add_action( 'submit_form', 'test_func' );
+
+
+function sell_your_car(){
+	$brand=$_POST['brand'];
+	$post_type='cars';
+	$post_content=$_POST['desc_val'];
+	$model=$_POST['model'];
+	$post_year=$_POST['year'];
+	$post_fuel_val=$_POST['fuel_val'];
+	$post_doors_val=$_POST['doors_val'];
+	$post_trans_val=$_POST['trans_val	'];
+	$post_car_type=$_POST['car_type'];
+	$post_engine_val=$_POST['engine_val'];
+	$power_val=$_POST['power_val'];
+	$condition_val=$_POST['condition_val'];
+	$mileage_val=$_POST['mileage_val'];
+	$specs_val=$_POST['specs_val'];
+	$car_color_val=$_POST['car_color_val'];
+	$price_val=$_POST['price_val'];
+	$location_val=$_POST['location_val'];
+	$exterior_val=$_POST['exterior_val'];
+	$equipment_val=$_POST['equipment_val'];
+	$car_image=$_POST['car_image'];
+	$user_id=$_POST['user_id'];
+	$mobile_no=$_POST['mobile_no'];
+	
+	$p_id = wp_insert_post(
+		array(
+		'post_author'  => $user_id,
+		'post_title'   => $brand." ".$model,
+		'post_status'  => 'publish',
+		'post_type'    => $post_type,
+		'post_content' => $post_content
+		));
+		
+		add_post_meta($p_id,'car_condition',$condition_val);
+		add_post_meta($p_id,'car_year',$post_year);
+		add_post_meta($p_id,'car_fuel',$post_fuel_val);
+		add_post_meta($p_id,'car_doors',$post_doors_val);
+		add_post_meta($p_id,'car_transmission',$post_trans_val);
+		add_post_meta($p_id,'car_body_type',$post_car_type);
+		add_post_meta($p_id,'car_enginecc',$post_engine_val);
+		add_post_meta($p_id,'car_power',$power_val);
+		add_post_meta($p_id,'car_mileage',$mileage_val);
+		add_post_meta($p_id,'car_specs',$specs_val);
+		add_post_meta($p_id,'car_color',$car_color_val);
+		add_post_meta($p_id,'car_price',$price_val);
+		add_post_meta($p_id,'car_location',$location_val);
+		add_post_meta($p_id,'car_exterior',$exterior_val);
+		add_post_meta($p_id,'car_interior',$interior_val);
+		add_post_meta($p_id,'car_equipment',$equipment_val);
+			
+		
+}
+add_action( "wp_ajax_sell_your_car","sell_your_car");
+add_action( "wp_ajax_nopriv_sell_your_car","sell_your_car");
+
